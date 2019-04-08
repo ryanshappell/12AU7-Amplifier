@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:12AU7-Amplifier-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,7 +20,7 @@ U 1 1 5CAA7597
 P 1800 3400
 F 0 "J1" H 1782 3725 50  0000 C CNN
 F 1 "AudioIn" H 1782 3634 50  0000 C CNN
-F 2 "digikey-footprints:Headphone_Jack_2.5mm_SJ1-3523N" H 1800 3400 50  0001 C CNN
+F 2 "digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N" H 1800 3400 50  0001 C CNN
 F 3 "~" H 1800 3400 50  0001 C CNN
 	1    1800 3400
 	1    0    0    -1  
