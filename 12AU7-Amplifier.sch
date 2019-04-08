@@ -655,7 +655,7 @@ U 1 1 5CAEEF58
 P 8850 3400
 F 0 "J3" H 8570 3333 50  0000 R CNN
 F 1 "AudioOut" H 8570 3424 50  0000 R CNN
-F 2 "digikey-footprints:Headphone_Jack_2.5mm_SJ1-3523N" H 8850 3400 50  0001 C CNN
+F 2 "digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N" H 8850 3400 50  0001 C CNN
 F 3 "~" H 8850 3400 50  0001 C CNN
 	1    8850 3400
 	-1   0    0    -1  
