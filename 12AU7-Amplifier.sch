@@ -14,19 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:AudioJack3 J1
-U 1 1 5CAA7597
-P 1800 3400
-F 0 "J1" H 1782 3725 50  0000 C CNN
-F 1 "AudioIn" H 1782 3634 50  0000 C CNN
-F 2 "digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N" H 1800 3400 50  0001 C CNN
-F 3 "~" H 1800 3400 50  0001 C CNN
-	1    1800 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 3400 2650 3400
 Wire Wire Line
 	2650 3400 2650 3350
 $Comp
@@ -41,16 +28,14 @@ F 3 "" H 2150 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 4100 2150 3500
-Wire Wire Line
-	2150 3300 2000 3300
+	2150 4100 2150 3600
 $Comp
 L Valve:ECC81 U1
 U 3 1 5CABFE26
 P 6000 3450
 F 0 "U1" V 5954 3778 50  0000 L CNN
 F 1 "12AU7" V 6045 3778 50  0000 L CNN
-F 2 "Valve:Valve_Noval_P" H 6270 3050 50  0001 C CNN
+F 2 "12AU7:12AU7" H 6270 3050 50  0001 C CNN
 F 3 "http://www.r-type.org/pdfs/ecc81.pdf" H 6000 3450 50  0001 C CNN
 	3    6000 3450
 	0    1    1    0   
@@ -61,7 +46,7 @@ U 2 1 5CABE549
 P 6000 2850
 F 0 "U1" V 6273 2850 50  0000 C CNN
 F 1 "12AU7" V 6364 2850 50  0000 C CNN
-F 2 "Valve:Valve_Noval_P" H 6270 2450 50  0001 C CNN
+F 2 "12AU7:12AU7" H 6270 2450 50  0001 C CNN
 F 3 "http://www.r-type.org/pdfs/ecc81.pdf" H 6000 2850 50  0001 C CNN
 	2    6000 2850
 	0    -1   1    0   
@@ -282,10 +267,10 @@ $EndComp
 Wire Wire Line
 	2850 3700 3100 3700
 $Comp
-L Device:R R3
+L Device:R R2
 U 1 1 5CAA5F31
 P 3700 4100
-F 0 "R3" V 3493 4100 50  0000 C CNN
+F 0 "R2" V 3493 4100 50  0000 C CNN
 F 1 "100kΩ" V 3584 4100 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 4100 50  0001 C CNN
 F 3 "~" H 3700 4100 50  0001 C CNN
@@ -369,10 +354,10 @@ F 3 "~" H 3250 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R2
+L Device:R R1
 U 1 1 5CB60F09
 P 3700 2800
-F 0 "R2" V 3493 2800 50  0000 C CNN
+F 0 "R1" V 3493 2800 50  0000 C CNN
 F 1 "100kΩ" V 3584 2800 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 2800 50  0001 C CNN
 F 3 "~" H 3700 2800 50  0001 C CNN
@@ -417,7 +402,7 @@ U 1 1 5CABD216
 P 6000 4100
 F 0 "U1" V 6365 4100 50  0000 C CNN
 F 1 "12AU7" V 6274 4100 50  0000 C CNN
-F 2 "Valve:Valve_Noval_P" H 6270 3700 50  0001 C CNN
+F 2 "12AU7:12AU7" H 6270 3700 50  0001 C CNN
 F 3 "http://www.r-type.org/pdfs/ecc81.pdf" H 6000 4100 50  0001 C CNN
 	1    6000 4100
 	0    -1   -1   0   
@@ -641,24 +626,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR020
 U 1 1 5CAF0E88
-P 8550 3800
-F 0 "#PWR020" H 8550 3550 50  0001 C CNN
-F 1 "GND" H 8555 3627 50  0000 C CNN
-F 2 "" H 8550 3800 50  0001 C CNN
-F 3 "" H 8550 3800 50  0001 C CNN
-	1    8550 3800
+P 8500 3850
+F 0 "#PWR020" H 8500 3600 50  0001 C CNN
+F 1 "GND" H 8505 3677 50  0000 C CNN
+F 2 "" H 8500 3850 50  0001 C CNN
+F 3 "" H 8500 3850 50  0001 C CNN
+	1    8500 3850
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 J3
-U 1 1 5CAEEF58
-P 8850 3400
-F 0 "J3" H 8570 3333 50  0000 R CNN
-F 1 "AudioOut" H 8570 3424 50  0000 R CNN
-F 2 "digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N" H 8850 3400 50  0001 C CNN
-F 3 "~" H 8850 3400 50  0001 C CNN
-	1    8850 3400
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8300 3850 8300 3500
@@ -673,10 +647,10 @@ Wire Wire Line
 Wire Wire Line
 	4950 3800 4950 4550
 $Comp
-L Connector:Barrel_Jack J2
+L Connector:Barrel_Jack J1
 U 1 1 5CC919F9
 P 1900 6700
-F 0 "J2" H 1957 7025 50  0000 C CNN
+F 0 "J1" H 1957 7025 50  0000 C CNN
 F 1 "Barrel_Jack" H 1957 6934 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1950 6660 50  0001 C CNN
 F 3 "~" H 1950 6660 50  0001 C CNN
@@ -712,10 +686,10 @@ $EndComp
 Wire Wire Line
 	2200 6600 2500 6600
 $Comp
-L Device:R R1
+L Device:R R3
 U 1 1 5CC9A575
 P 3750 6600
-F 0 "R1" V 3543 6600 50  0000 C CNN
+F 0 "R3" V 3543 6600 50  0000 C CNN
 F 1 "800Ω" V 3634 6600 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3680 6600 50  0001 C CNN
 F 3 "~" H 3750 6600 50  0001 C CNN
@@ -768,10 +742,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 6600 4500 6900
 $Comp
-L power:PWR_FLAG #FLG0101
+L power:PWR_FLAG #FLG02
 U 1 1 5CD1CF3B
 P 3400 6400
-F 0 "#FLG0101" H 3400 6475 50  0001 C CNN
+F 0 "#FLG02" H 3400 6475 50  0001 C CNN
 F 1 "PWR_FLAG" H 3400 6573 50  0000 C CNN
 F 2 "" H 3400 6400 50  0001 C CNN
 F 3 "~" H 3400 6400 50  0001 C CNN
@@ -779,10 +753,10 @@ F 3 "~" H 3400 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
+L power:GND #PWR03
 U 1 1 5CD310AE
 P 2650 2800
-F 0 "#PWR0101" H 2650 2550 50  0001 C CNN
+F 0 "#PWR03" H 2650 2550 50  0001 C CNN
 F 1 "GND" H 2655 2627 50  0000 C CNN
 F 2 "" H 2650 2800 50  0001 C CNN
 F 3 "" H 2650 2800 50  0001 C CNN
@@ -792,10 +766,10 @@ $EndComp
 Wire Wire Line
 	2650 2800 2650 3050
 $Comp
-L power:PWR_FLAG #FLG0102
+L power:PWR_FLAG #FLG01
 U 1 1 5CD351E6
 P 2700 6900
-F 0 "#FLG0102" H 2700 6975 50  0001 C CNN
+F 0 "#FLG01" H 2700 6975 50  0001 C CNN
 F 1 "PWR_FLAG" H 2700 7073 50  0000 C CNN
 F 2 "" H 2700 6900 50  0001 C CNN
 F 3 "~" H 2700 6900 50  0001 C CNN
@@ -828,25 +802,69 @@ Wire Wire Line
 	2650 3550 2650 3500
 Wire Wire Line
 	2650 3500 2150 3500
-Connection ~ 2150 3500
-Wire Wire Line
-	2150 3500 2150 3300
 Wire Wire Line
 	2650 3850 2650 3900
 Wire Wire Line
 	2650 3900 2050 3900
 Wire Wire Line
-	2050 3900 2050 3500
+	8600 3600 8500 3600
 Wire Wire Line
-	2050 3500 2000 3500
-Wire Wire Line
-	8650 3300 8550 3300
-Wire Wire Line
-	8550 3300 8550 3800
-Wire Wire Line
-	8650 3500 8300 3500
+	8500 3600 8500 3850
 Wire Wire Line
 	8300 3100 8300 3400
+$Comp
+L dk_Barrel-Audio-Connectors:SJ1-3523N CON1
+U 1 1 5CAC6A75
+P 1550 3500
+F 0 "CON1" H 1608 3887 60  0000 C CNN
+F 1 "AudioIn" H 1608 3781 60  0000 C CNN
+F 2 "digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N" H 1750 3700 60  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" H 1750 3800 60  0001 L CNN
+F 4 "CP1-3523N-ND" H 1750 3900 60  0001 L CNN "Digi-Key_PN"
+F 5 "SJ1-3523N" H 1750 4000 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1750 4100 60  0001 L CNN "Category"
+F 7 "Barrel - Audio Connectors" H 1750 4200 60  0001 L CNN "Family"
+F 8 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" H 1750 4300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689" H 1750 4400 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN JACK STEREO 3.5MM R/A" H 1750 4500 60  0001 L CNN "Description"
+F 11 "CUI Inc." H 1750 4600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1750 4700 60  0001 L CNN "Status"
+	1    1550 3500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8300 3400 8650 3400
+	1950 3400 2650 3400
+Wire Wire Line
+	1950 3600 2150 3600
+Connection ~ 2150 3600
+Wire Wire Line
+	2150 3600 2150 3500
+Wire Wire Line
+	2050 3900 2050 3500
+Wire Wire Line
+	2050 3500 1950 3500
+$Comp
+L dk_Barrel-Audio-Connectors:SJ1-3523N CON2
+U 1 1 5CB0F07A
+P 9000 3500
+F 0 "CON2" H 8672 3553 60  0000 R CNN
+F 1 "AudioOut" H 8672 3447 60  0000 R CNN
+F 2 "digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N" H 9200 3700 60  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" H 9200 3800 60  0001 L CNN
+F 4 "CP1-3523N-ND" H 9200 3900 60  0001 L CNN "Digi-Key_PN"
+F 5 "SJ1-3523N" H 9200 4000 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 9200 4100 60  0001 L CNN "Category"
+F 7 "Barrel - Audio Connectors" H 9200 4200 60  0001 L CNN "Family"
+F 8 "https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" H 9200 4300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689" H 9200 4400 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN JACK STEREO 3.5MM R/A" H 9200 4500 60  0001 L CNN "Description"
+F 11 "CUI Inc." H 9200 4600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9200 4700 60  0001 L CNN "Status"
+	1    9000 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3400 8600 3400
+Wire Wire Line
+	8300 3500 8600 3500
 $EndSCHEMATC

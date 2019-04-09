@@ -1,3 +1,6 @@
 (fp_lib_table
   (lib (name Alps_100KAX2)(type KiCad)(uri ${KIPRJMOD}/lib/Alps_100KAX2.pretty)(options "")(descr ""))
+  (lib (name 12AU7)(type KiCad)(uri ${KIPRJMOD}/lib/12AU7.pretty)(options "")(descr ""))
+  (lib (name TRS_Jack)(type KiCad)(uri ${KIPRJMOD}/lib/TRS_Jack.pretty)(options "")(descr ""))
+  (lib (name Heatsink)(type KiCad)(uri ${KIPRJMOD}/lib/Heatsink.pretty)(options "")(descr ""))
 )
