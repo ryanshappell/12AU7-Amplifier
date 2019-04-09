@@ -647,7 +647,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 3800 4950 4550
 $Comp
-L Connector:Barrel_Jack J1
+L Connector:Barrel_Jack_Switch J1
 U 1 1 5CC919F9
 P 1900 6700
 F 0 "J1" H 1957 7025 50  0000 C CNN
@@ -867,4 +867,8 @@ Wire Wire Line
 	8300 3400 8600 3400
 Wire Wire Line
 	8300 3500 8600 3500
+Wire Wire Line
+	2200 6700 2400 6700
+Wire Wire Line
+	2400 6700 2400 6800
 $EndSCHEMATC
