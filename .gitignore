@@ -39,3 +39,6 @@ fp-info-cache
 
 # Netlist
 *.net
+
+# LibreOffice locks
+.~lock.*#
