@@ -1,4 +1,4 @@
-(module Heatsink (layer F.Cu) (tedit 5CABF18F)
+(module Heatsink (layer F.Cu) (tedit 5FB060E1)
   (fp_text reference REF** (at 0 -1.78562) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -9,4 +9,9 @@
   (fp_line (start -8.13 0) (end -8.13 -16.26) (layer F.SilkS) (width 0.12))
   (fp_line (start 8.13 0) (end 8.13 -16.26) (layer F.SilkS) (width 0.12))
   (fp_line (start -8.13 -16.26) (end 8.13 -16.26) (layer F.SilkS) (width 0.12))
+  (model ${KIPRJMOD}/cad/heatsink/heatsink.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
