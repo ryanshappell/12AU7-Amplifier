@@ -1,4 +1,4 @@
-(module 12AU7 (layer F.Cu) (tedit 5FB062AB)
+(module 12AU7 (layer F.Cu) (tedit 5FB1F8C4)
   (descr 12AU7)
   (tags 12AU7)
   (fp_text reference REF** (at 0 -11.2776) (layer F.SilkS)
@@ -7,9 +7,9 @@
   (fp_text value 12AU7 (at 0 11.50112) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_circle (center 0 0) (end 10.25 0) (layer F.Fab) (width 0.1))
-  (fp_circle (center 0 0) (end 10.5 0) (layer F.CrtYd) (width 0.05))
   (fp_circle (center 0 0) (end 10.25 0) (layer F.SilkS) (width 0.12))
+  (fp_circle (center 0 0) (end 10.5 0) (layer F.CrtYd) (width 0.05))
+  (fp_circle (center 0 0) (end 10.25 0) (layer F.Fab) (width 0.1))
   (fp_text user %R (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -27,7 +27,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KIPRJMOD}/cad/Tube Socket - PCB v2.step"
+  (model "${KIPRJMOD}/lib/12AU7-Amplifier.3dshapes/Tube Socket - PCB v2.step"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
