@@ -340,17 +340,6 @@ F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 6700 4000 50
 $EndComp
 Wire Wire Line
 	3200 2250 3200 2350
-$Comp
-L Valve:ECC81 U1
-U 2 1 5FB0BB56
-P 5350 2600
-F 0 "U1" V 5700 2500 50  0000 L CNN
-F 1 "12AU7" V 5600 2500 50  0000 L CNN
-F 2 "12AU7-Amplifier:12AU7" H 5620 2200 50  0001 C CNN
-F 3 "http://www.r-type.org/pdfs/ecc81.pdf" H 5350 2600 50  0001 C CNN
-	2    5350 2600
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	2650 3450 2750 3450
 Wire Wire Line
@@ -844,17 +833,6 @@ F 3 "~" H 2400 6160 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
-U 1 1 5FB26FE9
-P 4600 2500
-F 0 "C6" H 4715 2546 50  0000 L CNN
-F 1 "1u" H 4715 2455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L18.0mm_W8.0mm_P15.00mm_FKS3_FKP3" H 4638 2350 50  0001 C CNN
-F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/998" H 4600 2500 50  0001 C CNN
-	1    4600 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 5FB495E2
 P 4600 3900
@@ -887,10 +865,6 @@ F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/998" H 7850 2900 
 	1    7850 2900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4600 2350 4600 2300
-Wire Wire Line
-	4600 2300 4100 2300
 Connection ~ 4100 2300
 Wire Wire Line
 	4100 2700 4600 2700
@@ -1078,4 +1052,30 @@ Wire Wire Line
 	4200 7000 4200 7050
 Wire Wire Line
 	4200 7050 4250 7050
+Wire Wire Line
+	4600 2300 4100 2300
+Wire Wire Line
+	4600 2350 4600 2300
+$Comp
+L Device:C C6
+U 1 1 5FB26FE9
+P 4600 2500
+F 0 "C6" H 4715 2546 50  0000 L CNN
+F 1 "1u" H 4715 2455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L18.0mm_W8.0mm_P15.00mm_FKS3_FKP3" H 4638 2350 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/998" H 4600 2500 50  0001 C CNN
+	1    4600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Valve:ECC81 U1
+U 2 1 5FB0BB56
+P 5350 2600
+F 0 "U1" V 5700 2500 50  0000 L CNN
+F 1 "12AU7" V 5600 2500 50  0000 L CNN
+F 2 "12AU7-Amplifier:12AU7" H 5620 2200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ecc81.pdf" H 5350 2600 50  0001 C CNN
+	2    5350 2600
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
